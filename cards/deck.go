@@ -50,7 +50,7 @@ func newDeck() deck {
 // Print out all the cards in the deck
 func (d deck) print() {
 	for i, card := range d {
-		fmt.Println(i, card)
+		fmt.Printf("%02d %v\n", i, card)
 	}
 }
 
