@@ -22,8 +22,9 @@ func main() {
 		},
 	}
 
-	jimPointer := &jim
-	jimPointer.updateName("Jimmy")
+	// Shortcut in Go that allows a method with a receiver of a pointer of a type
+	// to be called with just the type
+	jim.updateName("Jimmy")
 	jim.print()
 }
 
