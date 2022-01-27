@@ -40,4 +40,11 @@ Go program to demonstrate the creation and use of structs. This program was also
 |structs|functions|
 
 ## Maps
+Go program to demostrate the creation and use of maps. Very similar concept to dictionaries in C#. Main takeaways:
+- Maps are a collection of key/value pairs
+- All the keys must be of the same type
+- All the values must be of the same type
+- Key/value pairs can be easily added and removed making maps dynamic
+- Key/value pairs are indexed and can be iterated over
+- Maps are a reference type
 
