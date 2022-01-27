@@ -3,19 +3,19 @@ package main
 import "fmt"
 
 func main() {
-	// var colors map[string]string
+	colors := map[string]string{
+		"red":   "#ff0000",
+		"green": "#00ff00",
+		"blue":  "#0000ff",
+		"white": "#ffffff",
+	}
 
-	colors := make(map[string]string)
+	printMap(colors)
+}
 
-	// colors := map[string]string{
-	// 	"red":   "#ff0000",
-	// 	"green": "#00ff00",
-	// 	"blue":  "#0000ff",
-	// }
-
-	colors["white"] = "#ffffff"
-
-	delete(colors, "white")
-
-	fmt.Println(colors)
+// Print out all the key/value pairs of a map
+func printMap(c map[string]string) {
+	for color, hex := range c {
+		fmt.Println("Hex code for color", color, "is", hex)
+	}
 }
