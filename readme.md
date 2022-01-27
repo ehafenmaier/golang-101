@@ -24,4 +24,20 @@ Go program that will be built during the first part of the Udemy course. Main ta
 ## Even & Odd
 Short assignment during the course to write a small program that lists out the numbers 0 to 10 and print beside the number if it is even or odd. Simple use of a for loop and the modulus operator.
 ## Structs
-Go program to demonstrate the creation and use of structs.
+Go program to demonstrate the creation and use of structs. This program was also used to demonstrate how and when to use pointers. Go is considered a "pass by value" language and whenever a value is passed into a function Go makes a copy if that value to work with inside the function. I am having serious flashbacks to writing programs in C back in my college days. Main takeaways:
+- Go is a "pass by value" language by default
+- Declaring structs with values depends on the order of the values if the field name is not specified
+- When declaring structs using the ***var*** keyword the fields will be automatically assigned with "zero values"
+- The command `fmt.Printf("%+v", [struct])` will print out all the field names and their values of a struct
+- Pointers are needed when dealing with value types and not reference types
+
+|Value Types|Reference Types|
+|:---:|:---:|
+|int|slices|
+|float|maps|
+|string|channels|
+|bool|pointers|
+|structs|functions|
+
+## Maps
+
