@@ -48,3 +48,4 @@ Go program to demostrate the creation and use of maps. Very similar concept to d
 - Key/value pairs are indexed and can be iterated over
 - Maps are a reference type
 
+## Interfaces
