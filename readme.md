@@ -49,3 +49,7 @@ Go program to demostrate the creation and use of maps. Very similar concept to d
 - Maps are a reference type
 
 ## Interfaces
+Go program to demostrate interfaces. Main takeaways:
+- Interfaces are a special ***type*** that cannot have values assigned to them
+- Interfaces are not like ***generic types*** in other languages like C#
+- Interfaces are ***implicit*** (no formal link or declaration needed)
