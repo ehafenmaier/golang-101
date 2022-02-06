@@ -55,4 +55,4 @@ Go program to demostrate interfaces. Similar concepts to how interfaces are used
 - Interfaces are ***implicit*** (no formal link or declaration needed)
 
 ## Shapes
-The second short assignment to learn how to work with interfaces. Building structs to represent squares and triangles and a ***shape** interface that requires a ***getArea()*** function. Then a print function that accepts a shape interface argument to print the area to the screen.
+The second short assignment to learn how to work with interfaces. Building structs to represent squares and triangles and a ***shape*** interface that requires a ***getArea()*** function. Then a print function that accepts a shape interface argument to print the area to the screen.
