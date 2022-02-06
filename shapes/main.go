@@ -34,7 +34,7 @@ func (s square) getArea() float64 {
 }
 
 func (t triangle) getArea() float64 {
-	return t.base * t.height
+	return 0.5 * t.base * t.height
 }
 
 // Interface functions
