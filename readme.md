@@ -49,7 +49,10 @@ Go program to demostrate the creation and use of maps. Very similar concept to d
 - Maps are a reference type
 
 ## Interfaces
-Go program to demostrate interfaces. Main takeaways:
+Go program to demostrate interfaces. Similar concepts to how interfaces are used in C#. The main difference being C# interface are declared and not implicit. Main takeaways:
 - Interfaces are a special ***type*** that cannot have values assigned to them
 - Interfaces are not like ***generic types*** in other languages like C#
 - Interfaces are ***implicit*** (no formal link or declaration needed)
+
+## Shapes
+The second short assignment to learn how to work with interfaces. Building structs to represent squares and triangles and a ***shape** interface that requires a ***getArea()*** function. Then a print function that accepts a shape interface argument to print the area to the screen.
