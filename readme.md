@@ -56,3 +56,6 @@ Go program to demostrate interfaces. Similar concepts to how interfaces are used
 
 ## Shapes
 The second short assignment to learn how to work with interfaces. Building structs to represent squares and triangles and a ***shape*** interface that requires a ***getArea()*** function. Then a print function that accepts a shape interface argument to print the area to the screen.
+
+## Print File
+A more difficult assignment to demonstrate the use of interfaces. The assignment was more about looking through the Golang documentation to determine if there are types that implement interfaces to help read the contents of a text file and write it to the screen. The assignment also demonstrated how to pass arguments into a program by using ***os.Args*** (in this case we're passing in the name of the text file). Once the name of the file is passed into the program it was a matter of researching the ***File*** type and its ***Open()*** and ***Read()*** functions. 
