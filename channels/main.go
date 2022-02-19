@@ -23,9 +23,11 @@ func main() {
 	}
 
 	// Infinite loop that uses chanel messages to contniually
-	// check if a website is up or down
-	for {
-		go checkLink(<- c, c)
+	// check if a website is up or down.
+	// Alternative syntax using the range keyword to check the
+	// channel for messages.
+	for l := range c {
+		go checkLink(l, c)
 	}
 }
 
