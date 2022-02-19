@@ -59,3 +59,20 @@ The second short assignment to learn how to work with interfaces. Building struc
 
 ## Print File
 A more difficult assignment to demonstrate the use of interfaces. The assignment was more about looking through the Golang documentation to determine if there are types that implement interfaces to help read the contents of a text file and write it to the screen. The assignment also demonstrated how to pass arguments into a program by using ***os.Args*** (in this case we're passing in the name of the text file). Once the name of the file is passed into the program it was a matter of researching the ***File*** type and its ***Open()*** and ***Read()*** functions. 
+
+## Channels & Go Routines
+Go program to demonstrate the use of ***Go routines*** and ***channels***. Go routines are a way of *"scheduling"* the execution of code concurrently using one or more CPU cores. This is similar to the async/await pattern used in C#. Channels are a way to pass messages between Go routines. Main takeaways:
+- Go routines are *scheduled* and are constrained by the number of CPU core available
+- Channels are strongly typed (only values matching the channel type can be passed through that channel)
+- Receving a message from a channel is a blocking call
+- There are multiple ways to define an infinite for loop to check a channel
+  ```go
+  // With just the 'for' keyword
+  for {
+    fmt.Println(<-c)
+  }
+  // With the 'range' keyword
+  for m =: range c {
+    fmt.Println(m)
+  }
+  ```
