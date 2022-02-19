@@ -22,7 +22,12 @@ func main() {
 		go checkLink(link, c)
 	}
 
-	fmt.Println(<- c)
+	// Loop the checks the channel for a message based on the number
+	// of sites in the links slice.
+	// NOTE: The call to receive a message from a channel is a blocking call
+	for i := 0 ; i < len(links); i++ {
+		fmt.Println(<- c)
+	}
 }
 
 func checkLink(link string, c chan string) {
