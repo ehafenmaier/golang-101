@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"time"
 )
 
 func main() {
@@ -24,10 +25,20 @@ func main() {
 
 	// Infinite loop that uses chanel messages to contniually
 	// check if a website is up or down.
+	//
 	// Alternative syntax using the range keyword to check the
 	// channel for messages.
+	//
+	// Use a function liteeral (temporary function) to wrap both the
+	// sleep call and the check link call in a go routine
+	// NOTE: The link to check must be passed into the function literal
+	//       as an argumnet so the value of the link is not "captured"
+	//       by the function literal from outside its scope
 	for l := range c {
-		go checkLink(l, c)
+		go func(link string) {
+			time.Sleep(5 * time.Second)
+			checkLink(link, c)
+		}(l)
 	}
 }
 
