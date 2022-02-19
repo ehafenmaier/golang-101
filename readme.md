@@ -62,7 +62,7 @@ A more difficult assignment to demonstrate the use of interfaces. The assignment
 
 ## Channels & Go Routines
 Go program to demonstrate the use of ***Go routines*** and ***channels***. Go routines are a way of *"scheduling"* the execution of code concurrently using one or more CPU cores. This is similar to the async/await pattern used in C#. Channels are a way to pass messages between Go routines. Main takeaways:
-- Go routines are *scheduled* and are constrained by the number of CPU core available
+- Go routines are *scheduled* and are constrained by the number of CPU cores available
 - Channels are strongly typed (only values matching the channel type can be passed through that channel)
 - Receving a message from a channel is a blocking call
 - There are multiple ways to define an infinite for loop to check a channel
